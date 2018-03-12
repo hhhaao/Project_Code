@@ -17,3 +17,8 @@ Cannot determine embedded database driver class for database type NONE
 
 如果启动类和Controller不在同一个命名的父子目录，Controller会扫描不到，在启动类加父集目录
 @SpringBootApplication(scanBasePackages = "com.liuhao.avmoo.web")
+
+
+start.spring.io 下找到的mybatis官方的， 一致github有示例
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
