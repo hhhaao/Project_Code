@@ -1,5 +1,9 @@
-﻿			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
+﻿Main函数如果不在父级目录，在平行目录，Component的加载，Mybatis.Mapper都会导致很多问题
+
+@MapperScan("com.liuhao.avmoo.web.dao")
+
+<groupId>org.mybatis.spring.boot</groupId>
+<artifactId>mybatis-spring-boot-starter</artifactId>
 
 引入mybatis-start配置，如果不加任何配置会报错；
 

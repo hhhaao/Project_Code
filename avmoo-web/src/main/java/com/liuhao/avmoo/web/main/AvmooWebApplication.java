@@ -15,6 +15,6 @@ public class AvmooWebApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("========AvmooWebApplication Start OK===========");
+		System.out.println("========AvmooWebApplication Start 123===========");
 	}
 }
