@@ -20,5 +20,20 @@ Cannot determine embedded database driver class for database type NONE
 
 
 start.spring.io 下找到的mybatis官方的， 一致github有示例
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
+<groupId>org.mybatis.spring.boot</groupId>
+<artifactId>mybatis-spring-boot-starter</artifactId>
+
+cmp没用使用mybatis-spring-boot-starter, datasource是自己配置的
+
+mybatis document
+http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+
+mybatis.config-location
+mybatis.check-config-location
+mybatis.mapper-locations
+mybatis.type-aliases-package
+mybatis.type-handlers-package
+mybatis.executor-type
+mybatis.configuration-properties
+mybatis.configuration.xxxxxx-xxxxx-xxxxxxx
+
