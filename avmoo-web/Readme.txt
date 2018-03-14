@@ -32,14 +32,14 @@ cmp没用使用mybatis-spring-boot-starter, datasource是自己配置的
 mybatis document
 http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
 
-mybatis.config-location
-mybatis.check-config-location
-mybatis.mapper-locations
-mybatis.type-aliases-package
-mybatis.type-handlers-package
-mybatis.executor-type
-mybatis.configuration-properties
-mybatis.configuration.xxxxxx-xxxxx-xxxxxxx
+mybatis.config-location  指定xml配置文件路径
+mybatis.check-config-location 检查是否存在mybatis config xml文件
+mybatis.mapper-locations	指定dao.xml脚本文件路径
+mybatis.type-aliases-package	指定自定义VO类包
+mybatis.type-handlers-package 数据库类型-Java类型转换器，默认给我们提供，不需要
+mybatis.executor-type 默认SIMPLE   枚举 SIMPLE REUSE BATCH
+mybatis.configuration-properties http://www.mybatis.org/mybatis-3/configuration.html#properties
+mybatis.configuration.xxxxxx-xxxxx-xxxxxxx http://www.mybatis.org/mybatis-3/configuration.html#settings
 
 
 ---------------------------------------------------
@@ -50,6 +50,15 @@ com.liuhao.avmoo.web.dao.IAvmooDao.java
 必须包含<mapper namespace="com.liuhao.avmoo.web.dao.IAvmooDao">
 启动会自动加载，目录和文件名必须一致,不需要
 mybatis.mapper-locations=classpath:daoxml/*.xml
+
+---------------------------------------------------
+resultType="java.lang.String" 是必须
+
+resultType="com.liuhao.avmoo.web.domain.AvmooVO"
+全路径不需要type-aliases-package配置
+mybatis.type-aliases-package=com.liuhao.avmoo.web.domain
+----------------------------------------------------
+mybatis如果启动类路径，dao xml，result type，按规范来，啥配置都不需要
 
 
 
