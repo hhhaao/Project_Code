@@ -41,3 +41,17 @@ mybatis.executor-type
 mybatis.configuration-properties
 mybatis.configuration.xxxxxx-xxxxx-xxxxxxx
 
+
+---------------------------------------------------
+
+com.liuhao.avmoo.web.dao.IAvmooDao.java
+\src\main\java \com\liuhao\avmoo\web\dao\IAvmooDao.java
+\src\main\resources \com\liuhao\avmoo\web\dao\IAvmooDao.xml
+必须包含<mapper namespace="com.liuhao.avmoo.web.dao.IAvmooDao">
+启动会自动加载，目录和文件名必须一致,不需要
+mybatis.mapper-locations=classpath:daoxml/*.xml
+
+
+
+
+
