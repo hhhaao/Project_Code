@@ -10,5 +10,6 @@ public class AvmooEurekaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AvmooEurekaApplication.class, args);
+		// new SpringApplicationBuilder(Application.class).web(true).run(args);
 	}
 }
