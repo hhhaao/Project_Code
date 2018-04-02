@@ -5,5 +5,10 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: file:///D:/dlcache/
+        native:
+          searchLocations: file:///D:/dlcache/
+
+spring.profiles.active: native
+
+#http://127.0.0.1:8888/dlcache/application
+#D:\dlcache\application.yml no application-native.yml
