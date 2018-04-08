@@ -11,6 +11,8 @@ spring:
 spring.profiles.active: native
 
 
+# avmoo-web-dev -> application-dev -> avmoo-web -> application -> error
+
 #D:\dlcache\application.yml no application-native.yml
 #spring.profiles.active: native读表示本地配置
 
