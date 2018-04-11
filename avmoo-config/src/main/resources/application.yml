@@ -10,6 +10,9 @@ spring:
 
 spring.profiles.active: native
 
+security.user.name: abc
+security.user.password: 123
+
 
 # avmoo-web-dev -> application-dev -> avmoo-web -> application -> error
 
@@ -19,11 +22,14 @@ spring.profiles.active: native
 #测试url都带.yml
 #spring.cloud.config.server.default-label
 
-#http://127.0.0.1:8888/dlcache/application OK
-
-#http://127.0.0.1:8888/dlcache/application-native.yml OK
+#http://127.0.0.1:8888/dlcache/application** OK
 #http://127.0.0.1:8888/dlcache/application.yml 406
 
 #http://127.0.0.1:8888/dlcache/avmooweb-native.yml OK
-#http://127.0.0.1:8888/dlcache/avmooweb-native OK
-#http://127.0.0.1:8888/dlcache/avmooweb OK
+#http://127.0.0.1:8888/dlcache/** OK
+
+#http://127.0.0.1:8888/**/** OK
+
+#http://127.0.0.1:8888/**/avmoo-web.yml
+
+#http://127.0.0.1:8888/application.name/profile/label
