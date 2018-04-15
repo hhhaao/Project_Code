@@ -40,6 +40,11 @@ public class AvmooController {
 		System.out.println(webCtx.getParent());
 		System.out.println(webCtx.getParent().getParent());
 
+		
+		System.out.println(env.getProperty("flyway.sql-migration-separator"));
+		System.out.println(env.getProperty("flyway.sql-migration-prefix"));
+		System.out.println(env.getProperty("flyway.locations"));
+		
 		// env.getProperty("");
 
 		return "ok123";

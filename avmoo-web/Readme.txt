@@ -73,6 +73,22 @@ bootstrap.yml
 和
 ApplicationContext ApplicationContext.Parenet @Autowird Null 有关
 
+------------------------------------------------------
+flyway.enabled: false
+flyway.baseline-on-migrate: true
+flyway.baseline-version: 0
+
+一般
+flyway.baseline-on-migrate 会创建版本记录表
+
+classpath:db/migration/V1__**.sql从V1开始
+flyway.baseline-version默认值是1
+但是如果数据库有表, V1的SQL文件不会执行，要从V2开始
+如果没有表，V1的SQL文件会执行
+所以最好设置flyway.baseline-version: 0
+
+------------------------------------------------------
+
 
 
 
