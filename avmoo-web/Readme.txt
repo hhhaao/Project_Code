@@ -58,7 +58,20 @@ resultType="com.liuhao.avmoo.web.domain.AvmooVO"
 全路径不需要type-aliases-package配置
 mybatis.type-aliases-package=com.liuhao.avmoo.web.domain
 ----------------------------------------------------
-mybatis如果启动类路径，dao xml，result type，按规范来，啥配置都不需要
+mybatis如果启动类路径，dao xml，result type，按规范来，啥配置都不需要, 错了
+
+@Mapper
+public interface IAvmooDao
+
+@MapperScan("com.liuhao.avmoo.web")
+@MapperScan("com.liuhao.avmoo.web.dao")
+public class ApplicationMain
+
+<artifactId>spring-cloud-starter-config</artifactId>
+和
+bootstrap.yml
+和
+ApplicationContext ApplicationContext.Parenet @Autowird Null 有关
 
 
 
