@@ -12,10 +12,9 @@ public class ApplicationMain implements CommandLineRunner {
 	public static void main(String[] args) {
 		// SpringApplication.run(ApplicationMain.class, args);
 		// ConfigurableApplicationContext
-
 		SpringApplication app = new SpringApplication(ApplicationMain.class);
 		app.addInitializers(new AvmooApplicationContextInitializer());
-		// app.addListeners(listeners);
+		// app.addListeners(listeners);		
 		app.run(args);
 	}
 
