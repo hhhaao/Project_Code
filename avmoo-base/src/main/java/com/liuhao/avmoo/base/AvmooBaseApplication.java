@@ -1,4 +1,4 @@
-package com.liuhao.avmoo.user;
+package com.liuhao.avmoo.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class AvmooUserApplication {
+public class AvmooBaseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AvmooUserApplication.class, args);
+		SpringApplication.run(AvmooBaseApplication.class, args);
 	}
 }
